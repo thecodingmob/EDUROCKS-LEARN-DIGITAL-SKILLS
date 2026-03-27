@@ -1,0 +1,97 @@
+@import url("fonts.css");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  height: auto;
+  width: 80%;
+  padding: 1.2em;
+  background-color: rgb(9, 241, 9);
+  margin: auto;
+  border-radius: 12px;
+}
+form h1 {
+  font-family: RobotoSlab;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  color: white;
+  text-align: center;
+}
+form div.input-field div {
+  width: 80%;
+  margin-left: 20px;
+}
+form div {
+  padding: 10px;
+}
+form input {
+  background-color: white;
+  width: 100%;
+  height: 3em;
+  border: none;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 4px;
+  outline: none;
+}
+form input[type="text"] {
+  font-weight: 700;
+}
+form input[type="text"]:focus {
+  outline: 1px solid white;
+  background-color: rgb(9, 241, 9);
+  color: white;
+  font-family: Karla;
+}
+form label {
+  font-size: 16px;
+  font-family: Raleway;
+  color: white;
+  font-weight: 800;
+}
+form div.submit-field div {
+  text-align: center;
+}
+form input[type="submit"] {
+  font-family: Raleway;
+  font-weight: 800;
+  width: 50%;
+  color: rgb(4, 116, 4);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 16px;
+}
+form input[type="submit"]:hover {
+  color: white;
+  background-color: rgb(9, 241, 9);
+  border: 1px solid white;
+}
+form small {
+  font-size: 16px;
+  font-family: Karla;
+}
+form input[type="checkbox"] {
+  width: 20px;
+  accent-color: white;
+}
+form div.input-field div.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+label[for="consent"] {
+  font-weight: 400;
+}
+@media (min-width: 48em) {
+  form {
+    width: 60%;
+    margin: 2em auto;
+  }
+  form div.input-field div {
+    width: 90%;
+  }
+}
+@media (max-width: 48em) {
+}

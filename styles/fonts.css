@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "LexendDeca";
+  src: url("./fonts/LexendDeca-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSansCondensed-Regular.woff");
+}
+@font-face {
+  font-family: "Bungee";
+  src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Bungee-Regular.ttf");
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("./fonts/DMSans-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("./fonts/Figtree-VariableFont_wght.ttf");
+}

@@ -1,0 +1,146 @@
+HTML
+
+
+<nav class="navbar">
+  <div class="logo">MySite</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+</nav>
+
+
+CSS
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+JS
+
+
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+
+
+
+
+
+
+
+FEATS
+
+
+Core Learning Features
+Interactive Courses – Learn by doing, not just watching
+Beginner to Advanced Paths – Clear roadmaps for every skill level
+Real-World Projects – Build portfolio-ready work
+Self-Paced Learning – Study anytime, anywhere
+
+
+
+🧠 Smart Learning Experience
+Personalized Learning Paths – Courses tailored to user goals
+Progress Tracking Dashboard – See how far you’ve come
+AI-Powered Recommendations – Suggest what to learn next
+Quizzes & Assessments – Test your knowledge in real-time
+
+
+
+
+
+💼 Career-Focused Features
+Certificate of Completion – Showcase your achievements
+Job-Ready Skills Training – Focus on in-demand skills
+Portfolio Builder – Display your projects easily
+Career Guidance – Tips, roadmaps, and mentorship
+
+
+
+🌐 Community & Support
+Discussion Forums – Learn with others
+Mentor Support – Ask questions and get help
+Peer Reviews – Get feedback on your work
+Live Sessions / Webinars – Learn directly from experts
+
+
+📱 Accessibility & Convenience
+Mobile-Friendly Learning – Learn on any device
+Offline Access – Download lessons
+Multi-Language Support – Reach wider audiences
+Dark Mode – Better user experience
+
+
+⚡ Extra Features (to stand out)
+Gamification – Points, badges, leaderboards
+Daily Learning Streaks – Keep users engaged
+Skill Assessments Before Starting – Know your level
+Microlearning – Short, focused lessons
+

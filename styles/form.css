@@ -13,7 +13,6 @@ body{
 }
 form {
   height: auto;
-  width: 80%;
   padding: 1em;
   background-color: rgb(9, 241, 9);
   border-radius: 12px;
@@ -24,9 +23,6 @@ form h1 {
   margin-bottom: 16px;
   color: white;
   text-align: center;
-}
-form div {
-  padding: 10px;
 }
 form input {
   background-color: white;
@@ -84,15 +80,6 @@ form div.input-field div.check {
 }
 label[for="consent"] {
   font-weight: 400;
-}
-@media (min-width: 48em) {
-  form {
-    width: 60%;
-    margin: 2em auto;
-  }
-  form div.input-field div {
-    width: 90%;
-  }
 }
 @media (max-width: 48em) {
 }

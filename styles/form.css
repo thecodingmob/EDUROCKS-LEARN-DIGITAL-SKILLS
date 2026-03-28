@@ -15,7 +15,7 @@ body{
 }
 form {
   height: auto;
-  padding: 1em;
+  padding: .5em;
   background-color: rgb(9, 241, 9);
   border-radius: 12px;
   display: flex;
@@ -39,8 +39,8 @@ h1 {
 }
 form input {
   background-color: white;
-  height: 3.4rem;
-  width: 90%;
+  height: 3rem;
+  width: 100%;
   border: none;
   border-radius: 8px;
   margin-top: 8px;
@@ -71,10 +71,10 @@ form div.submit-field div {
 form input[type="submit"] {
   font-family: "DMSans", sans-serif;
   font-weight: 800;
-  width: 50%;
   color: rgb(4, 116, 4);
   background-color: rgb(255, 255, 255);
   margin-bottom: 16px;
+  padding: 12px;
 }
 form input[type="submit"]:hover {
   color: white;

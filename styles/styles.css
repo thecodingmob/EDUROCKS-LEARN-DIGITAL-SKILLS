@@ -70,6 +70,7 @@ header a:hover {
 @media (max-width: 768px) {
   header {
     justify-content: space-between;
+    padding: 1rem;
   }
   header ul {
     position: absolute;

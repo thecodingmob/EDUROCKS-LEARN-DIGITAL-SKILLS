@@ -1,28 +1,29 @@
 @import url("fonts.css");
-body {
+*,*::before,*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: "Figtree", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 form {
   height: auto;
   width: 80%;
-  padding: 1.2em;
+  padding: 1em;
   background-color: rgb(9, 241, 9);
-  margin: auto;
   border-radius: 12px;
 }
 form h1 {
-  font-family: RobotoSlab;
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
   color: white;
   text-align: center;
-}
-form div.input-field div {
-  width: 80%;
-  margin-left: 20px;
 }
 form div {
   padding: 10px;
@@ -56,7 +57,7 @@ form div.submit-field div {
   text-align: center;
 }
 form input[type="submit"] {
-  font-family: Raleway;
+  font-family: "DMSans", sans-serif;
   font-weight: 800;
   width: 50%;
   color: rgb(4, 116, 4);
@@ -70,7 +71,7 @@ form input[type="submit"]:hover {
 }
 form small {
   font-size: 16px;
-  font-family: Karla;
+  font-family: "Inter", sans-serif;
 }
 form input[type="checkbox"] {
   width: 20px;

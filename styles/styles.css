@@ -68,6 +68,9 @@ header a:hover {
 }
 /* Mobile styles */
 @media (max-width: 768px) {
+  body{
+  font-size: 16px; 
+  }
   header {
     justify-content: space-between;
     padding: 1rem;
@@ -266,7 +269,7 @@ h3 {
     padding-bottom: 2rem;
   }
 }
-.cta button {
+.cta a {
   text-align: center;
   width: 60%;
 

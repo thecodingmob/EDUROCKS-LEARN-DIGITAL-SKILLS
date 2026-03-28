@@ -72,6 +72,9 @@ header a:hover {
     justify-content: space-between;
     padding: 1rem;
   }
+  header h1{
+    font-size: 1.4rem;
+}
   header ul {
     position: absolute;
     top: 6rem;

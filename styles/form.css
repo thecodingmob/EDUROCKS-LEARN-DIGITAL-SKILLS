@@ -18,6 +18,11 @@ form {
   padding: 1em;
   background-color: rgb(9, 241, 9);
   border-radius: 12px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   padding: 0;
@@ -49,7 +54,6 @@ form label {
   font-family: Raleway;
   color: white;
   font-weight: 800;
-  padding-top: 1rem;
 }
 form label:first-of-type{
   padding-top: .4rem;

@@ -19,10 +19,16 @@ form {
   background-color: rgb(9, 241, 9);
   border-radius: 12px;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+form div.input-field{
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 h1 {
   padding: 0;
@@ -34,6 +40,7 @@ h1 {
 form input {
   background-color: white;
   height: 3.4rem;
+  width: 90%;
   border: none;
   border-radius: 8px;
   margin-top: 8px;
@@ -76,7 +83,7 @@ form input[type="submit"]:hover {
 }
 form small {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "DMSans", sans-serif;
 }
 form input[type="checkbox"] {
   width: 20px;

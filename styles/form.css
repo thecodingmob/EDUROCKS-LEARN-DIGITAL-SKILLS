@@ -11,6 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 1.4rem;
+  flex-direction: column;
 }
 form {
   height: auto;

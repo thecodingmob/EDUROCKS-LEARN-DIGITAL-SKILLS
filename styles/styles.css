@@ -112,7 +112,7 @@ header a:hover {
 
 /*SECTION hero*/
 section {
-  margin-top: 4rem;
+  padding-top: 6rem;
 }
 section:first-child {
   margin-top: 0;
@@ -207,7 +207,7 @@ h3 {
 
 /* section courses*/
 .courses {
-  padding: 2rem;
+  padding: 1rem;
   padding-inline: auto;
   display: flex;
   flex-direction: column;

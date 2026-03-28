@@ -78,7 +78,7 @@ header a:hover {
     right: 2rem;
     background: #fff;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     display: none;
     color: white;
     box-shadow: 0 0 2rem -20px inset rgb(9, 97, 9);
@@ -162,7 +162,7 @@ span.title {
   border-radius: 3px;
   background-color: rgb(9, 241, 9);
   text-decoration: none;
-  width: 60%;
+  width: 90%;
   text-align: center;
   font-family: "DMSans", sans-serif;
   font-size: 1rem;

@@ -3,6 +3,14 @@
   src: url("./fonts/LexendDeca-VariableFont_wght.ttf");
 }
 @font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-MediumItalic.woff");
+}
+@font-face {
+  font-family: "PoppinsN";
+  src: url("./fonts/Poppins-Black.woff");
+}
+@font-face {
   font-family: "OpenSans";
   src: url("./fonts/OpenSansCondensed-Regular.woff");
 }

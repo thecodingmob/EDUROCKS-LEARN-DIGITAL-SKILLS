@@ -5,12 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DMSans", sans-serif;
 }
 body {
   background-color: hsl(0, 0%, 100%);
   font-size: 18px;
   text-wrap: balance;
-  font-family: "DMSans", sans-serif;
 }
 main {
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -68,16 +68,16 @@ header a:hover {
 }
 /* Mobile styles */
 @media (max-width: 768px) {
-  body{
-  font-size: 16px; 
+  body {
+    font-size: 16px;
   }
   header {
     justify-content: space-between;
     padding: 1rem;
   }
-  header h1{
+  header h1 {
     font-size: 1.4rem;
-}
+  }
   header ul {
     position: absolute;
     top: 6rem;
@@ -120,6 +120,10 @@ section {
 section:first-child {
   margin-top: 0;
 }
+span.title {
+  color: rgb(9, 241, 9);
+  font-family: "PoppinsN", sans-serif;
+}
 .hero {
   display: grid;
   place-items: center;
@@ -136,13 +140,14 @@ section:first-child {
   & h2 {
     font-size: clamp(1rem, calc(6vw + 1rem), 4rem);
     padding-bottom: 1rem;
+    font-family: "PoppinsN", sans-serif;
   }
 
   @media (max-width: 768px) {
     text-align: center;
 
     & h2 {
-      padding-top: 1rem;
+      padding-top: 4rem;
     }
     & img {
       display: none;
@@ -157,9 +162,6 @@ section:first-child {
     padding: 4rem;
   }
 }
-span.title {
-  color: rgb(9, 241, 9);
-}
 .start-two {
   padding: 14px;
   font-weight: 500;
@@ -170,7 +172,6 @@ span.title {
   text-decoration: none;
   width: 90%;
   text-align: center;
-  font-family: "DMSans", sans-serif;
   font-size: 1rem;
   box-shadow: 0 20px 1.5rem -20px rgb(9, 97, 9);
 }

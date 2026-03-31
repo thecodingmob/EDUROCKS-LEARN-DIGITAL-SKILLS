@@ -1,101 +1,115 @@
 @import url("fonts.css");
-*,*::before,*::after {
-  margin: 0;
+*,
+*::before,
+*::after {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: "Figtree", sans-serif;
-  height: 100vh;
+body {
+  font-family: "LexendDeca", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  height: 120vh;
+  color: rgb(4, 48, 4);
+  background: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: 768px) {
+    background: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+  }
+}
+body.login {
+  height: 0;
+}
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  flex-direction: column;
+  height: 100vh;
+  margin-top: 20vh;
+}
+main.login {
+  margin-top: 0;
 }
 form {
-  height: auto;
-  padding: .5em;
-  background-color: rgb(9, 241, 9);
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
+  gap: 1.3rem;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 2rem -2px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: min(400px, 90%);
+  border-radius: 10px;
+  background-color: #fff;
 }
-form div.input-field{
-  display: flex;
-  gap: .5rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-h1 {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 16px;
-  color: rgb(9, 241, 9);
+form h1 {
   text-align: center;
-}
-form input {
-  background-color: white;
-  height: 3rem;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  margin-top: 8px;
-  padding: 4px;
-  outline: none;
-}
-form input[type="text"] {
-  font-weight: 700;
-}
-form input[type="text"]:focus {
-  outline: 1px solid white;
-  background-color: rgb(9, 241, 9);
-  color: white;
-  font-family: Karla;
-}
-form label {
-  font-size: 16px;
-  font-family: Raleway;
-  color: white;
-  font-weight: 800;
-}
-form label:first-of-type{
-  padding-top: .4rem;
-}
-form div.submit-field div {
-  text-align: center;
-}
-form input[type="submit"] {
-  font-family: "DMSans", sans-serif;
-  font-weight: 800;
-  color: rgb(4, 116, 4);
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 16px;
-  padding: 12px;
-}
-form input[type="submit"]:hover {
-  color: white;
-  background-color: rgb(9, 241, 9);
-  border: 1px solid white;
+  color: rgb(4, 48, 4);
+  padding-bottom: 1rem;
 }
 form small {
-  font-size: 16px;
-  font-family: "DMSans", sans-serif;
+  font-size: 0.78rem;
+
+  & a {
+    color: rgb(9, 241, 9);
+  }
 }
-form input[type="checkbox"] {
-  width: 20px;
-  accent-color: white;
-}
-form div.input-field div.check {
+.form-group,
+.alt {
   display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+.alt {
   align-items: center;
-  gap: 8px;
 }
-label[for="consent"] {
-  font-weight: 400;
+.check {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
 }
-@media (max-width: 48em) {
+label {
+  color: rgb(4, 48, 4);
+}
+input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 8px;
+  border: 1px solid rgb(9, 241, 9);
+  font-family: "Poppins", sans-serif;
+}
+input:focus,
+input:focus-within,
+input:focus-visible {
+  outline: 2px solid rgb(4, 48, 4);
+}
+input[placeholder] {
+  padding-left: 4px;
+}
+button {
+  padding: 14px;
+  width: 50%;
+  background-color: rgb(9, 241, 9);
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  font-weight: 100;
+  font-family: "PoppinsN", sans-serif;
+  letter-spacing: 2px;
+}
+button:focus,
+button:focus-within {
+  outline: 2px solid rgb(4, 48, 4);
+}
+
+/*sign up*/
+input[type="checkbox"] {
+  width: 20px;
 }

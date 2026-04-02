@@ -43,8 +43,9 @@
     </header>
 
     <main>
+      <!--Hero section-->
       <section class="hero">
-        <div>
+        <div class="hero-content">
           <p class="ins">Learn now</p>
           <h2>
             Blast off to knowledge with <br />
@@ -60,181 +61,238 @@
           </div>
         </div>
         <div>
-          <img src="./images/hero.jpg" alt="" />
+          <img
+            src="./images/hero.jpg"
+            alt="a person with a laptop working on a web project"
+          />
         </div>
       </section>
+      <!--Hero end-->
 
-      <section class="features">
-        <h3>Features</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
-          laborum facere illum vel quidem harum <br />totam magni cupiditate nam
-          ducimus?
-        </p>
-        <div class="even-column">
-          <div class="card">
-            <div>
-              <h4>AI-Powered Learning</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                sequi?
-              </p>
-            </div>
+      <!--Features section-->
+      <section class="features" id="features">
+        <div class="wrapper">
+          <div class="text-center">
+            <h3>Why Choose <span class="title">Edu</span>Rocks</h3>
+            <p>
+              We Provide the best learning experience for students of all levels
+            </p>
           </div>
-          <div class="card">
-            <div>
-              <h4>Self-pased Learning</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                sequi?
-              </p>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div>
+                <i class="fa-solid fa-robot"></i>
+                <h4>Interactive Learning</h4>
+                <p>
+                  Engage with interactive video lessons, quizzes, hands-on
+                  projects that make learning effective and fun.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div>
-              <h4>Progress Tracking</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                sequi?
-              </p>
+            <div class="feature-card">
+              <div>
+                <i class="fa-solid fa-book-open"></i>
+                <h4>Self-pased Learning</h4>
+                <p>
+                  Study at your own pace with 24/7 access to course materials
+                  and lifetime access to completed courses.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div>
-              <h4>Hands-on Assessments</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                sequi?
-              </p>
+            <div class="feature-card">
+              <div>
+                <i class="fa-solid fa-bars-progress"></i>
+                <h4>Progress Tracking</h4>
+                <p>
+                  Use AI-Powered tools to track your progress and to know small
+                  hitches here and there
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div>
-              <h4>Certification</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, provident!
-              </p>
+            <div class="feature-card">
+              <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h4>Certification</h4>
+                <p>
+                  Earn recognised certificates upon course completion to
+                  showcase your skills to employers.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!--features end-->
+
+      <!--courses start-->
       <section class="courses" id="courses">
-        <h3>Courses</h3>
-        <p>Delve into some of our hands-on courses.</p>
-        <div class="even-columns">
-          <div class="card">
-            <img
-              src="./images/campaign-creators-RSc6D7bO0fA-unsplash.jpg"
-              alt="a hand writing on a piece of paper and a laptop on a table"
-              loading="lazy"
-            />
-            <div>
-              <h4>DIGITAL MARKETING</h4>
-              <p>
-                Turn clicks into customers with smart, data-driven digital
-                marketing.
-              </p>
+        <div class="wrapper">
+          <div class="text-center">
+            <h3>Courses</h3>
+            <p>Delve into some of our hands-on courses.</p>
+          </div>
+
+          <div class="courses-grid">
+            <div class="course-card">
+              <img
+                src="./images/campaign-creators-RSc6D7bO0fA-unsplash.jpg"
+                alt="a hand writing on a piece of paper and a laptop on a table"
+              />
+              <div class="course-content">
+                <h4>
+                  DIGITAL <br />
+                  MARKETING
+                </h4>
+                <span class="course-category">Marketing</span>
+                <p>
+                  Turn clicks into customers with smart, data-driven digital
+                  marketing.
+                </p>
+                <div class="course-meta">
+                  <span><i class="fa-solid fa-clock"></i> 30 hrs</span>
+                  <span> <i class="fa-solid fa-user"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-card">
+              <img
+                src="./images/deng-xiang--WXQm_NTK0U-unsplash.jpg"
+                alt="an illustration showing the complexities of data analytics"
+              />
+              <div class="course-content">
+                <h4>
+                  DATA <br />
+                  ANALYTICS
+                </h4>
+                <span class="course-category">Data Science</span>
+                <p>
+                  Transform raw data into powerful insights that drive smarter
+                  decisions.
+                </p>
+                <div class="course-meta">
+                  <span><i class="fa-solid fa-clock"></i> 70 hrs</span>
+                  <span> <i class="fa-solid fa-user"></i> Beginner</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-card">
+              <img
+                src="./images/juanjo-jaramillo-mZnx9429i94-unsplash.jpg"
+                alt="a coding matrix"
+              />
+              <div class="course-content">
+                <h4>CODING AND PROGRAMMING</h4>
+                <span class="course-category">Technology</span>
+                <p>Build the future by mastering code—one line at a time.</p>
+                <div class="course-meta">
+                  <span><i class="fa-solid fa-clock"></i> 60 hrs</span>
+                  <span> <i class="fa-solid fa-user"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-card">
+              <img
+                src="./images/merakist-CNbRsQj8mHQ-unsplash.jpg"
+                alt="an offwhite background banner saying social media"
+              />
+              <div class="course-content">
+                <h4>SOCIAL MEDIA MANAGEMENT</h4>
+                <span class="course-category">Social Media</span>
+                <p>
+                  Grow your brand and engage your audience with strategic social
+                  media management.
+                </p>
+                <div class="course-meta">
+                  <span><i class="fa-solid fa-clock"></i> 20 hrs</span>
+                  <span> <i class="fa-solid fa-user"></i> Intermediate</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img
-              src="./images/juanjo-jaramillo-mZnx9429i94-unsplash.jpg"
-              alt="a coding matrix"
-              loading="lazy"
-            />
-            <div>
-              <h4>CODING AND PROGRAMMING</h4>
-              <p>Build the future by mastering code—one line at a time.</p>
-            </div>
+          <div class="text-center">
+            <a href="./courses.html" class="btn">
+              View Courses
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
-          <div class="card">
-            <img
-              src="./images/deng-xiang--WXQm_NTK0U-unsplash.jpg"
-              alt="an illustration showing the complexities of data analytics"
-              loading="lazy"
-            />
-            <div>
-              <h4>DATA ANALYTICS</h4>
-              <p>
-                Transform raw data into powerful insights that drive smarter
-                decisions.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/merakist-CNbRsQj8mHQ-unsplash.jpg"
-              alt="an offwhite background banner saying social media"
-              loading="lazy"
-            />
-            <div>
-              <h4>SOCIAL MEDIA MANAGEMENT</h4>
-              <p>
-                Grow your brand and engage your audience with strategic social
-                media management.
-              </p>
-            </div>
-          </div>
-          <a href="./courses.html" class="card">
-            <h4>EXPLORE MORE HANDS-ON COURSES</h4>
-            <i class="fas fa-arrow-right"></i>
-          </a>
         </div>
       </section>
+      <!--courses end-->
 
-      <section id="aboutUs" class="about">
-        <h3>Who we Are</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur
-          corrupti eaque ut culpa assumenda doloremque nam rerum. Quaerat
-          dolorem corrupti aut pariatur nam excepturi, ipsum doloremque.
-          Voluptatibus aliquid ratione, velit nostrum ducimus doloribus, libero
-          unde, magni inventore quisquam amet. Amet velit quis animi beatae,
-          repudiandae, voluptates necessitatibus, vitae est eligendi nisi
-          doloremque excepturi! Eos quis repellendus quisquam, voluptatem
-          cupiditate eaque est cumque rem sed enim ex aliquam nobis numquam
-          quidem beatae. Asperiores perferendis consectetur rem eum. Quisquam,
-          veritatis dolorum? Repellendus consequatur ipsa neque voluptas enim
-          exercitationem illum dolor velit distinctio omnis eum, praesentium
-          provident eos, voluptates sit tempora quisquam illo esse sunt autem.
-          Eos laboriosam dolor incidunt autem eius hic, a perferendis quia illo
-          quo repudiandae reiciendis nam. Blanditiis possimus tempore ullam sunt
-          pariatur impedit itaque ipsum reiciendis voluptates dolor optio
-          minima, quasi natus iure, dolorum suscipit, explicabo autem ipsam
-          repellat non dolore cupiditate? Accusantium iure magnam sunt
-          reprehenderit!
-        </p>
-      </section>
-
+      <!--section call to action-->
       <section class="cta">
-        <h3>
-          Join Millions of people <br />
-          learning today
-        </h3>
-        <a href="./sign-up.html" class="start-two">Join Now</a>
+        <div class="wrapper">
+          <h3>
+            Join Millions of people <br />
+            learning today
+          </h3>
+          <a href="./sign-up.html" class="btn">Join Now</a>
+        </div>
       </section>
+      <!--cta end-->
     </main>
 
     <footer>
-      <div class="even-columns">
-        <div>
-          <img src="./images/logo.png" alt="" />
+      <div class="wrapper">
+        <div class="footer-column">
+          <div class="footer-col">
+            <div class="footer-content">
+              <img src="./images/logo.png" alt="logo" />
+              <p>
+                Making quality skills accessible and available for everyone.
+                Join our community of lifelong learners.
+              </p>
+            </div>
+            <div class="social-links">
+              <ul>
+                <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>
+                <li><a href="#"></a><i class="fab fa-X"></i></li>
+                <li><a href="#"></a><i class="fab fa-instagram"></i></li>
+                <li><a href="#"></a><i class="fab fa-linkedin-in"></i></li>
+                <li><a href="#"></a><i class="fab fa-youtube"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Learn More</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Popular Courses</h4>
+            <div class="footer-courses">
+              <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Graphics Design</a></li>
+                <li><a href="#">Business Analysis</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><i class="fas fa-phone"></i>+234 (091) 69370962</li>
+              <li><i class="fas fa-envelope"></i>itodogoodness@gmail.com</li>
+              <li><i class="fas fa-clock"></i>Mon - Fri: 9:00AM - 6:00PM</li>
+            </ul>
+          </div>
         </div>
-        <nav role="secondary-navigation">
-          <ul>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Learn More</a></li>
-          </ul>
-        </nav>
-        <div>
-          <p>ZETER AI(coming soon)</p>
+        <div class="copyright">
+          <small
+            >&copy; 2026 EduRocks. All Rights Reserved. | The ZETER Group</small
+          >
         </div>
-      </div>
-      <div>
-        <small>&copy; Copyright Reserved THE ZETER GROUP 2026</small>
       </div>
     </footer>
 

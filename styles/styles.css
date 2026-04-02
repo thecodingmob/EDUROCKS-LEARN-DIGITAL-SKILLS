@@ -9,15 +9,11 @@
 }
 body {
   background-color: hsl(0, 0%, 100%);
-  font-size: 18px;
   text-wrap: balance;
-}
-main {
-  padding: 0 1.5rem 1.5rem 1.5rem;
-  padding-inline: auto;
+  font-size: 1em;
 }
 img {
-  width: 100%;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -26,6 +22,13 @@ h2,
 h3,
 h4 {
   font-family: "LexendDeca", sans-serif;
+}
+h3 {
+  font-size: clamp(1rem, calc(6vw + 1rem), 2rem);
+}
+
+p {
+  color: rgba(26, 22, 22, 0.771);
 }
 
 /*HEADER SECTION*/
@@ -66,7 +69,7 @@ header a:hover {
   font-size: 24px;
   cursor: pointer;
 }
-/* Mobile styles */
+/* Mobile styles for header */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -112,18 +115,89 @@ header a:hover {
     display: block;
   }
 }
+/* header end */
 
-/*SECTION hero*/
-section {
-  padding-top: 6rem;
+/* utility classes */
+.start-two {
+  padding: 14px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(9, 97, 9);
+  text-decoration: none;
+  width: 90%;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 20px 1.5rem -20px rgb(9, 97, 9);
 }
-section:first-child {
-  margin-top: 0;
+.start-two:nth-child(1) {
+  border: 1px solid rgb(9, 97, 9);
 }
-span.title {
+.start-two:nth-child(2) {
+  background-color: white;
+  color: rgb(9, 97, 9);
+  border: 1px solid rgb(9, 97, 9);
+}
+.start-two:nth-child(2):hover {
+  background-color: rgb(9, 97, 9);
+  color: white;
+}
+.start-two:hover {
+  background-color: white;
+  color: rgb(9, 97, 9);
+  transition: all 0.21s linear;
+  transform: translateY(-4px);
+}
+.wrapper {
+  max-inline-size: 960px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 14px;
+  background-color: rgb(9, 97, 9);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(9, 97, 9);
+}
+.btn:hover {
+  color: rgb(22, 21, 21);
+  background-color: beige;
+}
+.title {
   color: rgb(9, 97, 9);
   font-family: "PoppinsN", sans-serif;
 }
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    .start-two {
+      width: 30%;
+    }
+  }
+}
+/* utility classes end */
+
+/*SECTIONS*/
+section {
+  padding-bottom: 6rem;
+}
+
+/* hero section */
 .hero {
   display: grid;
   place-items: center;
@@ -162,122 +236,40 @@ span.title {
     padding: 4rem;
   }
 }
-.start-two {
-  padding: 14px;
-  font-weight: 500;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  background-color: rgb(9, 97, 9);
-  text-decoration: none;
-  width: 90%;
-  text-align: center;
-  font-size: 1rem;
-  box-shadow: 0 20px 1.5rem -20px rgb(9, 97, 9);
-}
-.start-two:nth-child(1) {
-  border: 1px solid rgb(9, 97, 9);
-}
-.start-two:nth-child(2) {
-  background-color: white;
-  color: rgb(9, 97, 9);
-  border: 1px solid rgb(9, 97, 9);
-}
-.start-two:nth-child(2):hover {
-  background-color: rgb(9, 97, 9);
-  color: white;
-}
-.start-two:hover {
-  background-color: white;
-  color: rgb(9, 97, 9);
-  transition: all 0.21s linear;
-  transform: translateY(-4px);
-}
-div.even-columns {
-  display: grid;
-  gap: 2em;
-  place-items: center;
-  padding-top: 2rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-h3 {
-  font-size: clamp(1rem, calc(6vw + 1rem), 2rem);
-  text-align: center;
-  padding: 1rem;
-}
-
-/*about section*/
-.about {
-  text-align: center;
-  padding: 3rem;
-
-  @media (min-width: 768px) {
-    columns: 2;
-
-    & h3 {
-      column-span: all;
-    }
-  }
-}
+/* hero end */
 
 /* features section*/
-.features {
-  padding-bottom: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  & > p {
-    text-align: center;
-  }
-}
-.features div.even-column {
-  padding: 4rem;
+.feature-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-areas:
-    "one"
-    "two" "three" "four" "five";
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+.feature-card {
+  border: none;
+  border-radius: 6px;
+  transition: all 0.5s ease-in;
+  box-shadow:
+    1px 1px 7px -4px rgba(0, 0, 0, 0.152),
+    -1px -1px 12px -1px rgba(0, 0, 0, 0.193);
+  padding: 2rem;
 
-  @media (min-width: 768px) {
-    grid-template-areas:
-      "one two three"
-      "four five three";
+  & h4 {
+    font-size: 1.35rem;
+    padding-bottom: 0.5rem;
   }
 }
-.features .card:nth-child(1) {
-  grid-area: one;
-}
-.features .card:nth-child(2) {
-  grid-area: two;
-}
-.features .card:nth-child(3) {
-  grid-area: three;
-}
-.features .card:nth-child(4) {
-  grid-area: four;
-}
-.features .card:nth-child(5) {
-  grid-area: five;
+.feature-card:hover {
+  transform: translateY(-15px);
 }
 
-/* section courses*/
-.courses {
-  padding: 1rem;
-  padding-inline: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/*courses section*/
+.courses-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
-.courses h3 + p {
-  text-align: center;
-}
-.card {
+.course-card {
   border: none;
   border-radius: 6px;
   transition: all 0.5s ease-in;
@@ -285,39 +277,39 @@ h3 {
   box-shadow:
     1px 1px 7px -4px rgba(0, 0, 0, 0.152),
     -1px -1px 12px -1px rgba(0, 0, 0, 0.193);
-
-  & div {
-    padding: 2rem;
-  }
-  & h4 {
-    padding-bottom: 0.5rem;
-    font-size: 24px;
-  }
-  & p {
-    font-size: 1rem;
-  }
+  padding: 1.2rem;
 }
-.courses .card:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  text-decoration: none;
-  color: rgb(9, 97, 9);
-  padding: 3rem;
-  margin-bottom: 6rem;
-
-  & i {
-    font-size: 24px;
-  }
+.course-card h4 {
+  padding-block: 1rem;
+  font-size: 1.5em;
+  color: rgb(22, 21, 21);
 }
-.card:hover {
+.course-card p {
+  padding-block: 1rem;
+  font-size: 0.875em;
+  color: rgba(26, 22, 22, 0.771);
+}
+.course-card:hover {
   transform: translateY(-15px);
+}
+.course-category {
+  background-color: rgb(9, 97, 9);
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 1.5rem;
+}
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgba(26, 22, 22, 0.671);
 }
 /*section cta*/
 .cta {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-block-start: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,55 +327,56 @@ h3 {
     width: 20%;
   }
 }
+/* cta end */
+
+/* footer */
 footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
   background-color: rgb(9, 97, 9);
   color: white;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-footer nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+  padding-block-start: 1.8rem;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  & p {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
+.footer-content {
+  display: grid;
+  gap: 0.7rem;
+  padding-bottom: 1rem;
+}
+.footer-col h4::before {
+  border-bottom: 3px solid white;
+}
+.footer-column {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+}
+.social-links ul {
+  display: flex;
+  gap: 0.7rem;
+}
+.social-links i {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.copyright {
+  border-top: 2px solid rgb(2, 200, 2);
+  text-align: center;
+  padding-block: 2rem;
+}
+footer ul {
+  list-style: none;
+}
 footer li {
-  padding: 1rem;
+  padding-block: 0.5rem;
 }
 footer a {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   padding: 0;
   text-decoration: none;
 }
 footer a:hover {
   color: rgb(2, 200, 2);
   background-color: none;
-}
-.buttons {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.5rem;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    .start-two {
-      width: 30%;
-    }
-  }
 }

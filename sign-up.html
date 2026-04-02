@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduRocks Sign Up</title>
     <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
   </head>
   <body>
     <main>
@@ -24,6 +25,7 @@
             required
             aria-required="true"
           />
+          <span class="error"></span>
         </div>
         <div class="form-group">
           <label for="lname">Last Name <small>(Optional)</small></label
@@ -34,6 +36,7 @@
             id="lname"
             placeholder="Your Lastname"
           />
+          <span class="error"></span>
         </div>
         <div class="form-group">
           <label for="password">Password</label><br />
@@ -45,9 +48,10 @@
             required
             aria-required="true"
           />
+          <span class="error"></span>
         </div>
         <div class="form-group">
-          <label for="confirmpassword">Password</label><br />
+          <label for="confirmpassword">Confirm Password</label><br />
           <input
             type="text"
             name="confirmpassword"
@@ -56,6 +60,7 @@
             required
             aria-required="true"
           />
+          <span class="error"></span>
         </div>
         <div class="check">
           <input
@@ -73,7 +78,6 @@
         </div>
         <div class="alt">
           <button type="submit">Create Account</button>
-          <button type="reset">Reset form</button>
         </div>
         <div>
           <small

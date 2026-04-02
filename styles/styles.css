@@ -57,7 +57,7 @@ header a {
   display: inline-block;
 }
 header a:hover {
-  background-color: rgb(9, 241, 9);
+  background-color: rgb(9, 97, 9);
   color: white;
   font-weight: 500;
 }
@@ -121,7 +121,7 @@ section:first-child {
   margin-top: 0;
 }
 span.title {
-  color: rgb(9, 241, 9);
+  color: rgb(9, 97, 9);
   font-family: "PoppinsN", sans-serif;
 }
 .hero {
@@ -168,7 +168,7 @@ span.title {
   color: white;
   border: none;
   border-radius: 3px;
-  background-color: rgb(9, 241, 9);
+  background-color: rgb(9, 97, 9);
   text-decoration: none;
   width: 90%;
   text-align: center;
@@ -176,20 +176,20 @@ span.title {
   box-shadow: 0 20px 1.5rem -20px rgb(9, 97, 9);
 }
 .start-two:nth-child(1) {
-  border: 1px solid rgb(9, 241, 9);
+  border: 1px solid rgb(9, 97, 9);
 }
 .start-two:nth-child(2) {
   background-color: white;
-  color: rgb(9, 241, 9);
-  border: 1px solid rgb(9, 241, 9);
+  color: rgb(9, 97, 9);
+  border: 1px solid rgb(9, 97, 9);
 }
 .start-two:nth-child(2):hover {
-  background-color: rgb(9, 241, 9);
+  background-color: rgb(9, 97, 9);
   color: white;
 }
 .start-two:hover {
   background-color: white;
-  color: rgb(9, 241, 9);
+  color: rgb(9, 97, 9);
   transition: all 0.21s linear;
   transform: translateY(-4px);
 }
@@ -209,6 +209,62 @@ h3 {
   padding: 1rem;
 }
 
+/*about section*/
+.about {
+  text-align: center;
+  padding: 3rem;
+
+  @media (min-width: 768px) {
+    columns: 2;
+
+    & h3 {
+      column-span: all;
+    }
+  }
+}
+
+/* features section*/
+.features {
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & > p {
+    text-align: center;
+  }
+}
+.features div.even-column {
+  padding: 4rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "one"
+    "two" "three" "four" "five";
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      "one two three"
+      "four five three";
+  }
+}
+.features .card:nth-child(1) {
+  grid-area: one;
+}
+.features .card:nth-child(2) {
+  grid-area: two;
+}
+.features .card:nth-child(3) {
+  grid-area: three;
+}
+.features .card:nth-child(4) {
+  grid-area: four;
+}
+.features .card:nth-child(5) {
+  grid-area: five;
+}
+
 /* section courses*/
 .courses {
   padding: 1rem;
@@ -221,7 +277,7 @@ h3 {
 .courses h3 + p {
   text-align: center;
 }
-.skills {
+.card {
   border: none;
   border-radius: 6px;
   transition: all 0.5s ease-in;
@@ -241,20 +297,21 @@ h3 {
     font-size: 1rem;
   }
 }
-.skills:last-child {
+.courses .card:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
   display: inline-block;
   text-decoration: none;
-  color: rgb(9, 241, 9);
+  color: rgb(9, 97, 9);
   padding: 3rem;
+  margin-bottom: 6rem;
 
   & i {
     font-size: 24px;
   }
 }
-.skills:hover {
+.card:hover {
   transform: translateY(-15px);
 }
 /*section cta*/
@@ -312,7 +369,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: rgb(9, 241, 9);
+  color: rgb(2, 200, 2);
   background-color: none;
 }
 .buttons {

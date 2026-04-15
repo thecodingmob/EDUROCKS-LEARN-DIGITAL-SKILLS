@@ -264,42 +264,43 @@ function handleSignupForm(event) {
 
 // Initialize forms when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if we're on login page
-  const loginForm = document.querySelector('form[action="#"]');
-  if (loginForm && window.location.pathname.includes("log-in.html")) {
+  const loginForm = document.getElementById("login-form");
+  const signupForm = document.getElementById("signup-form");
+
+  if (loginForm) {
     loginForm.addEventListener("submit", handleLoginForm);
 
-    // Clear errors on input
-    document
-      .getElementById("email")
-      .addEventListener("input", () => clearError("email"));
-    document
-      .getElementById("password")
-      .addEventListener("input", () => clearError("password"));
+    const loginEmail = document.getElementById("email");
+    const loginPassword = document.getElementById("password");
+    if (loginEmail)
+      loginEmail.addEventListener("input", () => clearError("email"));
+    if (loginPassword)
+      loginPassword.addEventListener("input", () => clearError("password"));
   }
 
-  // Check if we're on signup page
-  if (loginForm && window.location.pathname.includes("sign-up.html")) {
-    loginForm.addEventListener("submit", handleSignupForm);
+  if (signupForm) {
+    signupForm.addEventListener("submit", handleSignupForm);
 
-    // Clear errors on input
-    document
-      .getElementById("fname")
-      .addEventListener("input", () => clearError("fname"));
-    document
-      .getElementById("lname")
-      .addEventListener("input", () => clearError("lname"));
-    document
-      .getElementById("email")
-      .addEventListener("input", () => clearError("email"));
-    document
-      .getElementById("password")
-      .addEventListener("input", () => clearError("password"));
-    document
-      .getElementById("confirmpassword")
-      .addEventListener("input", () => clearError("confirmpassword"));
-    document
-      .getElementById("consent")
-      .addEventListener("change", () => clearError("consent"));
+    const signupFname = document.getElementById("fname");
+    const signupLname = document.getElementById("lname");
+    const signupEmail = document.getElementById("email");
+    const signupPassword = document.getElementById("password");
+    const signupConfirm = document.getElementById("confirmpassword");
+    const signupConsent = document.getElementById("consent");
+
+    if (signupFname)
+      signupFname.addEventListener("input", () => clearError("fname"));
+    if (signupLname)
+      signupLname.addEventListener("input", () => clearError("lname"));
+    if (signupEmail)
+      signupEmail.addEventListener("input", () => clearError("email"));
+    if (signupPassword)
+      signupPassword.addEventListener("input", () => clearError("password"));
+    if (signupConfirm)
+      signupConfirm.addEventListener("input", () =>
+        clearError("confirmpassword"),
+      );
+    if (signupConsent)
+      signupConsent.addEventListener("change", () => clearError("consent"));
   }
 });

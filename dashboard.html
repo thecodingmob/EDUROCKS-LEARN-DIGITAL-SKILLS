@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EduRocks - Dashboard</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./auth.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Welcome to EduRocks Dashboard</h1>
+      <button id="logout-btn">Logout</button>
+    </header>
+    <main>
+      <p>You are successfully logged in!</p>
+      <!-- Add your dashboard content here -->
+    </main>
+
+    <script>
+      // Check authentication on page load
+      document.addEventListener("DOMContentLoaded", async function () {
+        const user = await checkAuth();
+        if (!user) {
+          // Redirect to login if not authenticated
+          window.location.href = "./log-in.html";
+        } else {
+          console.log("User authenticated:", user);
+        }
+
+        // Handle logout
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", logoutUser);
+      });
+    </script>
+  </body>
 </html>

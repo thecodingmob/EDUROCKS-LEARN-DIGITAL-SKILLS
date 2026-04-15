@@ -37,7 +37,7 @@ main.login {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 2rem -2px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,6 @@ form small {
 .alt {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
   width: 100%;
 }
 .alt {
@@ -99,6 +98,7 @@ input[placeholder] {
 span.error {
   color: red;
   font-size: small;
+  display: none;
 }
 button {
   padding: 14px;
@@ -118,6 +118,12 @@ button:focus-within {
 button:hover {
   color: rgb(9, 97, 9);
   background-color: rgb(1, 251, 1);
+}
+button[type="submit"] {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 /*sign up*/
